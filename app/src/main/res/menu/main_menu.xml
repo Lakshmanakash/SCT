@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/about_us"
+            android:title="about us" />
+        <item
+            android:id="@+id/nav_department"
+            android:icon="@drawable/department"
+            android:title="Department"
+            >
+        </item>
+        <item
+            android:id="@+id/nav_placement"
+            android:icon="@drawable/placement"
+            android:title="placement" />
+
+
+    </group>
+
+
+    <item android:title="Login to more">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/login_icon"
+                    android:title="Login" />
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/profile_icon"
+                    android:title="Profile" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/logout"
+                    android:title="Logout" />
+            </group>
+
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_baseline_share_24"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_baseline_star_rate_24"
+                android:title="Rate us" />
+        </menu>
+    </item>
+</menu>

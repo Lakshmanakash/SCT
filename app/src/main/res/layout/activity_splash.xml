@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splash"
+    android:orientation="vertical"
+    android:background="#B7D9E6">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/first_line"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="#5F02E3" />
+
+        <View
+            android:id="@+id/second_line"
+            android:layout_width="20dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/first_line"
+            android:background="@color/teal_700" />
+
+        <View
+            android:id="@+id/third_line"
+            android:layout_width="20dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/second_line"
+            android:background="#9F04F3" />
+
+        <View
+            android:id="@+id/fourth_line"
+            android:layout_width="20dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/third_line"
+            android:background="#FCFBFD" />
+
+        <View
+            android:id="@+id/fifth_line"
+            android:layout_width="20dp"
+            android:layout_height="180dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/fourth_line"
+            android:background="#08DC79" />
+
+        <View
+            android:id="@+id/sixth_line"
+            android:layout_width="20dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/fifth_line"
+            android:background="#FAFBFB" />
+
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="363dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="290dp"
+            android:layout_height="290dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:transitionName="logo_image"
+            android:paddingLeft="25dp"
+            android:paddingTop="25dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/splash" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/splashtext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/baloo"
+            android:text="SAG"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="50sp"
+            android:transitionName="logo_text" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <TextView
+                android:id="@+id/splashtext2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Developed by MMBJ"
+                android:textColor="#0869BF"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
